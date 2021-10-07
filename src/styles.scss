@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+html, body { height: 100%; background-color: #F5F7FA; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.dialogo {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.spacer {
+    flex: 1 1 auto;
+  }
+  
+  .main-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+  }
+  
+  .app-header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .app-sidenav {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }

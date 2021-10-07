@@ -1,0 +1,31 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.main-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.app-header {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.app-sidenav {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+
+  
+  .texto{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .titulo{
+    font-size: large;
+    
+  }

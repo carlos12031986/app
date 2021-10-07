@@ -1,0 +1,19 @@
+<form [formGroup]="form">
+  <h2>Credentials</h2>
+  <button (click)="addCreds()">Add</button>
+
+  <div formArrayName="credentials" *ngFor="let creds of form.controls.credentials?.controls; let i = index">
+    <ng-container [formGroupName]="i">
+              <mat-form-field>
+                  <mat-select class="form-control" formControlName="question">
+                      <mat-option >asd</mat-option>
+                  </mat-select>
+              </mat-form-field>
+              <mat-form-field>
+                  <mat-select class="form-control" formControlName="answer">
+                      <mat-option >asd</mat-option>
+                  </mat-select>
+              </mat-form-field>
+    </ng-container>
+  </div>
+</form>

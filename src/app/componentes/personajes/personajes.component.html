@@ -1,0 +1,60 @@
+<div class="container-fluid" >
+    <div class="d-flex align-items-center">
+        <div class="col-12">
+            <br>
+            <strong style="font-size: 31px;">Personajes</strong>
+            &nbsp;
+        </div>
+    </div>
+    <br>
+    <div class="row d-flex align-items-center">
+        <div class="col-12 col-sm-12 col-md-4" *ngFor="let element of listaPersonajes;let i = index;">
+            <div class="d-flex justify-content-center align-items-center formato mat-elevation-z8">
+                <div class="container-fluid">
+                   <div class="row ">
+                        <div class="col-md-5 col-sm-12 container" style="padding-left: 0px; padding-right: 0px;">
+                            <img src="{{element.image}}" class="sobre" width="100%" style="margin-top: 0px;" (click)="show(element)"
+                                matTooltip="Ver detalle" />
+                        </div>
+                        <div class="col-md-5 d-flex sobre" (click)="show(element)" matTooltip="Ver detalle" >
+                            <div class="container">
+                                <div class="d-flex">
+                                    <strong class="text">{{element.name}}</strong>
+                                </div>
+                                <div class="d-flex">
+                                    <span class="tit">ESTADO</span> 
+                                </div>
+                                <div class="d-flex">
+                                    <span class="text">{{element.status}}</span>
+                                </div>
+                                <div class="d-flex">
+                                    <span class="tit">ESPECIE</span> 
+                                </div>
+                                <div class="d-flex">
+                                    <span class="text">{{element.species}}</span>
+                                </div>
+                               <div class="d-flex">
+                                    <span class="tit">GENERO</span>
+                               </div>
+                                <div class="d-flex">
+                                    <span class="text">{{element.gender}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-12" >
+                            <button mat-icon-button style="color: #eee;" >
+                                <mat-icon>favorite</mat-icon>
+                            </button>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <br>
+        </div>
+       <br>
+    </div>
+</div> 
+
+
+
+ 
